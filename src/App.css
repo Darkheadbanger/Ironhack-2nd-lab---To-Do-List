@@ -1,0 +1,41 @@
+body {
+  background-color: #F0FCEE;
+  width: 600px;
+  height: 700px;
+  position: relative;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  border: #A98F89 solid 3px;
+  border-radius: 10px;
+}
+
+.note {
+  width: 100px;
+}
+
+.side-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+footer {
+  position: absolute;
+  top: 550px;
+  left: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
