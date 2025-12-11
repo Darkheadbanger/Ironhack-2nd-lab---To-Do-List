@@ -1,12 +1,14 @@
 body {
   background-color: #F0FCEE;
-  width: 600px;
-  height: 700px;
+  width: 80vw;
+  height: 90vh;
   position: relative;
   font-family: 'Lobster', cursive;
   font-weight: 400;
   border: #A98F89 solid 3px;
   border-radius: 10px;
+  display: block;
+  margin: 40px auto;
 }
 
 .note {
@@ -32,10 +34,16 @@ p {
 
 footer {
   position: absolute;
-  top: 550px;
-  left: 130px;
+  top: 555px;
+  left: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+}
+
+.add-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

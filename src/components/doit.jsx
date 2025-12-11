@@ -2,8 +2,8 @@ import React from 'react'
 
 function DoIt() {
   return (
-    <div>
-        <input type="add to list" placeholder='add to list' id='add_here'/>
+    <div className="add-form">
+        <input type="add to list" placeholder='add to list' id='add_here' className="add_input" />
         <button className='addButton'>
             add
         </button>
