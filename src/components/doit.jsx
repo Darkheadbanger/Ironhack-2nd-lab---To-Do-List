@@ -10,6 +10,7 @@ function DoIt({text, time, todos, setTodos, setText, setTime, timeNow}) {
         setTime(timeNow);
     }
   return (
+    // <Link></Link>
     <div className="add-form">
         <input 
           type="text" 
