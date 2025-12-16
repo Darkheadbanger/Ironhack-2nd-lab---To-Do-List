@@ -11,6 +11,7 @@ import Cards from './components/cards.jsx'
 import { v4 as UUID4 } from 'uuid'
 // Here import
 function App() {
+    const timeNow = new Date().toISOString(0, 16);
 
   const [todos, setTodos] = useState([
   { id: UUID4(), list: "Buy groceries", time: "9:00 AM" },
@@ -19,14 +20,19 @@ function App() {
   { id: UUID4(), list: "Pay bills", time: "4:30 PM" },
   { id: UUID4(), list: "Call a friend", time: "7:00 PM" },
   ]);
+
+  const [text, setText] = useState("");
+  const [time, setTime] = useState(timeNow)
+  
+
   
   return (
     <>
     <div className='body-container'>
      <Navbar />
         <Sidebar />
-          <DoIt todos={todos} setTodos={setTodos} /> 
-            <Cards todos={todos} setTodos={setTodos} /> 
+          <DoIt todos={todos} setTodos={setTodos} text={text} time={time} setText={setText} setTime={setTime} timeNow={timeNow} /> 
+            <Cards todos={todos} setTodos={setTodos}  /> 
               <Footer/>
     </div>
      
