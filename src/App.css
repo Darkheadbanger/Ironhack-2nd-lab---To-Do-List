@@ -77,3 +77,7 @@ footer {
   background-color: #a98f89;
   border: none;
 }
+
+.add_input{
+  margin: 0 5px;
+}

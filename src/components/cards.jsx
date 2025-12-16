@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
-function Cards() {
-const [todos, setTodos] = useState([
-  { id: new Date().getTime(), list: "Buy groceries", time: "9:00 AM" },
-  { id: new Date().getTime() + 1, list: "Finish homework", time: "11:00 AM" },
-  { id: new Date().getTime() + 2, list: "Clean the house", time: "2:00 PM" },
-  { id: new Date().getTime() + 3, list: "Pay bills", time: "4:30 PM" },
-  { id: new Date().getTime() + 4, list: "Call a friend", time: "7:00 PM" },
-  ]);
+function Cards({todos, setTodos}) {
+
   const deleteCard = (todoId) => {
     setTodos(card => card.filter((todo) => {
       console.log(todo.id, "!==", todoId)

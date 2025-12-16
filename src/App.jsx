@@ -1,4 +1,5 @@
 // import image from './assets/doItSvg.png'
+import { useState } from 'react'
 import './App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -7,16 +8,25 @@ import Navbar from './components/navbar.jsx'
 import Sidebar from './components/sidebar.jsx'
 import DoIt from './components/doit.jsx'
 import Cards from './components/cards.jsx'
+import { v4 as UUID4 } from 'uuid'
 // Here import
 function App() {
 
+  const [todos, setTodos] = useState([
+  { id: UUID4(), list: "Buy groceries", time: "9:00 AM" },
+  { id: UUID4(), list: "Finish homework", time: "11:00 AM" },
+  { id: UUID4(), list: "Clean the house", time: "2:00 PM" },
+  { id: UUID4(), list: "Pay bills", time: "4:30 PM" },
+  { id: UUID4(), list: "Call a friend", time: "7:00 PM" },
+  ]);
+  
   return (
     <>
     <div className='body-container'>
      <Navbar />
         <Sidebar />
-          <DoIt /> 
-            <Cards /> 
+          <DoIt todos={todos} setTodos={setTodos} /> 
+            <Cards todos={todos} setTodos={setTodos} /> 
               <Footer/>
     </div>
      
