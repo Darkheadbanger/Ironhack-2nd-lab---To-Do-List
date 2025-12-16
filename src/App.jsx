@@ -12,11 +12,13 @@ function App() {
 
   return (
     <>
+    <div className='body-container'>
      <Navbar />
         <Sidebar />
           <DoIt /> 
             <Cards /> 
               <Footer/>
+    </div>
      
 {/* Here, HTML with JS dynamically */}
     </>
