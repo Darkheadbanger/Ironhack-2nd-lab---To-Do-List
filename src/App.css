@@ -78,6 +78,30 @@ footer {
   border: none;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 40px;
+  text-align: center;
+  gap: 20px;
+}
+
+.about-container h1 {
+  color: #a98f89;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.about-container p {
+  color: #666;
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
 .add_input{
   margin: 0 5px;
 }
