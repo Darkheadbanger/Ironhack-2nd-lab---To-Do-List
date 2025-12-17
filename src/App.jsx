@@ -16,11 +16,11 @@ function App() {
   const timeNow = new Date().toISOString(0, 16);
 
   const [todos, setTodos] = useState([
-    { id: UUID4(), list: "Buy groceries", time: "9:00 AM" },
-    { id: UUID4(), list: "Finish homework", time: "11:00 AM" },
-    { id: UUID4(), list: "Clean the house", time: "2:00 PM" },
-    { id: UUID4(), list: "Pay bills", time: "4:30 PM" },
-    { id: UUID4(), list: "Call a friend", time: "7:00 PM" },
+    // { id: UUID4(), list: "Buy groceries", time: "9:00 AM" },
+    // { id: UUID4(), list: "Finish homework", time: "11:00 AM" },
+    // { id: UUID4(), list: "Clean the house", time: "2:00 PM" },
+    // { id: UUID4(), list: "Pay bills", time: "4:30 PM" },
+    // { id: UUID4(), list: "Call a friend", time: "7:00 PM" },
   ]);
 
   const [text, setText] = useState("");
